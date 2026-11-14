@@ -12,9 +12,11 @@ Ruqing Chen (GUT Geoservice Inc., Montreal). Draft; continues Part XIII (doi:10.
   - Section 4: Hypothesis L (Lichtman-type level for {q1 q2 r}, residue N) and its reduction to Lichtman's Propositions 3.1/3.2;
     the sieve constant G_1 (recomputed 5.581 against Li's 6.069); r_0 = 6 / 8 / 14 (Theorem 1.2), P_6.
   - Section 5: the problem of Nath-Xie (p - 1 sum of two squares, p + 2 = P_r): their computation files integrate the linear sieve
-    without the factor 1/s; with the correct functions their inequality gives r = 84, the fixed point r = 65 (one-sided) / 56.
+    without the factor 1/s, and three constants of their switched term need correction (full audit:
+    https://github.com/Ruqing1963/nath-xie-sieve-audit). With the correct functions and the corrected switched term their
+    inequality gives r = 17, the fixed point r = 15 (one-sided, n = 1600); with the switched term as printed, 59 and 58.
 - `code/`: `hjb_sieve_engine.py` (engine; modes verify, phase, app2), `causal_fixed_point.py` (modes check, run, boundary, lowmem),
-  `lichtman_level.py`, `nath_xie_app.py`, `nath_xie_check.py`, `switch_probe.py`, with `semilinear_sieve.py` and
+  `lichtman_level.py`, `nath_xie_fixed_point.py` (supersedes `nath_xie_app.py`, `nath_xie_check.py`), `switch_probe.py`, with `semilinear_sieve.py` and
   `iterated_buchstab.py` from Part XIII.
 - `results/`, `figures/`: outputs.
 

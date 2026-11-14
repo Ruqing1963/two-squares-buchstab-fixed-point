@@ -29,7 +29,7 @@
 
 \begin{document}
 \begin{abstract}
-Part~XIII sifted $N-p$ by two semi-linear sieves (split primes below $N^\eta$, inert primes below $N^\theta$) in a vector sieve, iterated Buchstab's identity on the inert primes, and obtained $N=Q_{C'}(u,v)_{\rm prime}+Q_C(x,y)_{P_r}$ with $r_0(L)=7,10,16$ for the switching losses $L=1,\frac32,3$. Here we study the fixed point of that recursion. In the gauge $u=a^{-1/2}\Phi$, $v=a^{-1/2}G$ it is an obstacle problem of Hamilton--Jacobi--Bellman type on the half-plane of levels $X$ and inert exponents $a$: either the rectangle bound is active or the pure delay equation $-a\,\partial_au=\frac12a^{-1/2}G(X-a;e,a)$ holds. The equation is causal in the level, so the fixed point is computed in one sweep in $O(n^2)$ operations instead of $O(mn^3)$; it agrees with the iteration of Part~XIII to machine precision and runs $2000$ times faster. We prove a half-level scaling law, $G(X;e,a)=\sqrt{2a/X}\,G(X;e,X/2)$ for $a\ge X/2$, which reduces the storage to $O(n^2/6)$ entries, and we observe that the free boundary degenerates: the optimal cut is the smallest admissible one on the whole active region $a<X-1.5e$. With grids up to $n=12800$ and a one-sided quadrature that errs on the safe side, the thresholds at the Bombieri--Vinogradov level $\frac12$ become $r_0(L)=7,9,15$, so the $D=23$ table of Part~XIII becomes $9/8$, $11/10$, $17/16$. Under a level of distribution of Lichtman's type for the switched sequence $\{q_1q_2r\}$, uniform in the residue $N$ (Hypothesis~L, which we reduce to Lichtman's bilinear and divisor estimates), the thresholds are $6,8,14$: every large even admissible $N$ is $p+x^2+y^2$ with $\Omega(x^2+y^2)\le6$. Finally the same engine with a linear auxiliary sieve treats the problem $p-1=m^2+n^2$, $p+2=P_r$ of Nath and Xie. Their numerical value rests on an incorrect delay system for the linear sieve functions; with the correct functions their inequality gives $r=84$, and the fixed point gives $r=65$ (one-sided) and $56$ (trapezoid).
+Part~XIII sifted $N-p$ by two semi-linear sieves (split primes below $N^\eta$, inert primes below $N^\theta$) in a vector sieve, iterated Buchstab's identity on the inert primes, and obtained $N=Q_{C'}(u,v)_{\rm prime}+Q_C(x,y)_{P_r}$ with $r_0(L)=7,10,16$ for the switching losses $L=1,\frac32,3$. Here we study the fixed point of that recursion. In the gauge $u=a^{-1/2}\Phi$, $v=a^{-1/2}G$ it is an obstacle problem of Hamilton--Jacobi--Bellman type on the half-plane of levels $X$ and inert exponents $a$: either the rectangle bound is active or the pure delay equation $-a\,\partial_au=\frac12a^{-1/2}G(X-a;e,a)$ holds. The equation is causal in the level, so the fixed point is computed in one sweep in $O(n^2)$ operations instead of $O(mn^3)$; it agrees with the iteration of Part~XIII to machine precision and runs $2000$ times faster. We prove a half-level scaling law, $G(X;e,a)=\sqrt{2a/X}\,G(X;e,X/2)$ for $a\ge X/2$, which reduces the storage to $O(n^2/6)$ entries, and we observe that the free boundary degenerates: the optimal cut is the smallest admissible one on the whole active region $a<X-1.5e$. With grids up to $n=12800$ and a one-sided quadrature that errs on the safe side, the thresholds at the Bombieri--Vinogradov level $\frac12$ become $r_0(L)=7,9,15$, so the $D=23$ table of Part~XIII becomes $9/8$, $11/10$, $17/16$. Under a level of distribution of Lichtman's type for the switched sequence $\{q_1q_2r\}$, uniform in the residue $N$ (Hypothesis~L, which we reduce to Lichtman's bilinear and divisor estimates), the thresholds are $6,8,14$: every large even admissible $N$ is $p+x^2+y^2$ with $\Omega(x^2+y^2)\le6$. Finally the same engine with a linear auxiliary sieve treats the problem $p-1=m^2+n^2$, $p+2=P_r$ of Nath and Xie. Their numerical value rests on an incorrect delay system for the linear sieve functions; with the correct functions, and with three constants of their switched term corrected and its levels chosen freely, their inequality gives $r=17$, and the fixed point gives $r=15$ (one-sided; $58$ with the switched term as printed).
 \end{abstract}
 \maketitle
 
@@ -79,12 +79,12 @@ r_0(1)=6,\qquad r_0(\tfrac32)=8,\qquad r_0(3)=14 ,
 both with Li's value $G_1=6.069$ and with our recomputed value $G_1=5.581$. In particular every large even admissible $N$ is $p+x^2+y^2$ with $\Omega(x^2+y^2)\le6$ for $D=4$, and $N=Q(u,v)_{\rm prime}+Q(x,y)_{P_6}$ for the nine fields of class number one; the $D=23$ table becomes $8/7$, $10/9$, $16/15$.
 \end{theorem}
 
-\emph{Another dimension.} The engine of Section~\ref{sec:obstacle} takes an auxiliary sieve of dimension $\frac12$ or $1$. With dimension $1$ it treats the problem of Nath and Xie \cite{NX}: primes $p$ with $p-1=m^2+n^2$ and $p+2=P_r$, where the inert primes $q\equiv3\pmod 4$ are sifted from $p-1$ and all primes below $N^{\theta_2}$ from $p+2$. Their Theorem~1.1 states $r=9$. Section~\ref{sec:nx} shows that the numerical value behind it, $H(0.17,0.25,0.449,0.011)=1.2690$, comes from an incorrect delay system for the linear sieve functions in their computation files (the factor $1/s$ is missing, so that their lower function exceeds their upper function at $s=3$), and that with the correct functions $H=-24.9$ at that point. With the correct functions their inequality gives $r=84$; our fixed point gives the following.
+\emph{Another dimension.} The engine of Section~\ref{sec:obstacle} takes an auxiliary sieve of dimension $\frac12$ or $1$. With dimension $1$ it treats the problem of Nath and Xie \cite{NX}: primes $p$ with $p-1=m^2+n^2$ and $p+2=P_r$, where the inert primes $q\equiv3\pmod 4$ are sifted from $p-1$ and all primes below $N^{\theta_2}$ from $p+2$. Their Theorem~1.1 states $r=9$. Section~\ref{sec:nx} shows that the numerical value behind it, $H(0.17,0.25,0.449,0.011)=1.2690$, comes from an incorrect delay system for the linear sieve functions in their computation files (the factor $1/s$ is missing, so that their lower function exceeds their upper function at $s=3$), and that with the correct functions $H=-34.3$ at that point (the companion note \cite{ChenNX} gives the full audit and reproduces their value from their files). The switched term of \cite{NX} also needs three corrections of constants, and its levels can be chosen more freely (Section~\ref{sec:nx}). With the correct functions and the corrected switched term their inequality gives $r=17$; our fixed point gives the following.
 
 \begin{theorem}\label{thm:nx}
-With the sieve of \cite{NX} at the level $x^{1/2}$ and the fixed point of \eqref{eq:recP}--\eqref{eq:recG} on the inert primes of $p-1$ (auxiliary linear sieve on $p+2$), there are $\gg x(\log x)^{-5/2}$ primes $p\le x$ with $p-1$ a sum of two squares and $\omega(p+2)\le65$, $p+2$ squarefree. The trapezoid rule gives $56$ at the same grid.
+With the sieve of \cite{NX} at the level $x^{1/2}$ and the fixed point of \eqref{eq:recP}--\eqref{eq:recG} on the inert primes of $p-1$ (auxiliary linear sieve on $p+2$), there are $\gg x(\log x)^{-5/2}$ primes $p\le x$ with $p-1$ a sum of two squares and $\omega(p+2)\le15$, $p+2$ squarefree. With the switched term as printed in \cite{NX} the bound is $58$.
 \end{theorem}
-The bottleneck there is the switched term of \cite{NX}, which is bounded by a product of two linear upper sieves; the vector sieve is not the limiting factor.
+The switched term of \cite{NX}, a product of two linear upper sieves, is the main constraint: correcting it accounts for the step from $59$ to $17$, and the fixed point for the step from $17$ to $15$.
 
 \subsection*{Conventions}
 $f,F$ are the functions of the half-dimensional sieve (Part~XIII, Section~4.3) and $f_1,F_1$ those of the linear sieve, $F_1(s)=2e^\gamma/s$ on $(0,3]$, $f_1(s)=2e^\gamma\log(s-1)/s$ on $[2,4]$, continued by $(sF_1)'=f_1(s-1)$ and $(sf_1)'=F_1(s-1)$. The auxiliary sieve has dimension $\kappa_{\rm aux}\in\{\frac12,1\}$, exponent $e$, functions $f_{\rm aux},F_{\rm aux}$; the main sieve has dimension $\frac12$ and exponent $a$. $X$ is the level exponent. The grid is $X=ih$, $a=jh$, $h=1/(2n)$, $1\le i\le n$, $1\le j<n$.
@@ -257,9 +257,9 @@ F_2'(s)=f_2(s-1)-F_2(s),\qquad f_2'(s)=F_2(s-1)-f_2(s)\qquad(s>2),
 \]
 with the history $F_2=2e^\gamma/s$, $f_2=0$ on $[1,2]$; the same system is printed in their Section~5. The linear sieve functions satisfy $(sF_1)'=f_1(s-1)$ and $(sf_1)'=F_1(s-1)$, with $F_1=2e^\gamma/s$ on $(0,3]$ and $f_1=2e^\gamma\log(s-1)/s$ on $[2,4]$; the factor $1/s$ and the initial segments are missing. On $[2,3]$, where $f(s-1)=0$, their system gives $F_2(s)=e^\gamma e^{2-s}$ and $f_2(s)=e^{-s}\int_2^s2e^\gamma e^t\,dt/(t-1)$:
 \[
-F_2(3)=0.655,\quad f_2(3)=1.476\qquad\text{against}\qquad F_1(3)=1.187,\quad f_1(3)=0.823 ,
+F_2(3)=0.655,\quad f_2(3)=1.475\qquad\text{against}\qquad F_1(3)=1.187,\quad f_1(3)=0.823 ,
 \]
-so their lower function exceeds their upper function. At their point the constraint $\theta_1s_1+\theta_2s_2=\frac12$ with $s_1\ge1$, $s_2\ge2$ forces $s_1\in[1,1.065]$ and $s_2\in[2,4.6]$, where $f(1.065)\le0.37$; the sign of $f(\sigma_1,\sigma_2)\approx f(s_1)F_2(s_2)+F(s_1)\bigl(f_2(s_2)-F_2(s_2)\bigr)$ is that of $f_2-F_2$. Table~\ref{tab:nx} evaluates $H$ with the constants computed as in their files ($c_3$ is a truncated conditionally convergent product there; its convergent form $\prod_{p\equiv1(4)}(1-\frac1p)(1+\frac{p^2}{(p-1)^3})\prod_{p\equiv3(4)}(1-p^{-2})^{1/2}=1.0607$ agrees to $10^{-3}$).
+so their lower function exceeds their upper function. At their point the constraint $\theta_1s_1+\theta_2s_2=\frac12$ with $s_1\ge1$, $s_2\ge2$ forces $s_1\in[1,1.065]$ and $s_2\in[2,4.6]$, where $f(1.065)\le0.37$; the sign of $f(\sigma_1,\sigma_2)\approx f(s_1)F_2(s_2)+F(s_1)\bigl(f_2(s_2)-F_2(s_2)\bigr)$ is that of $f_2-F_2$. The companion note \cite{ChenNX} carries out the full audit; Table~\ref{tab:nx} quotes its values. Their reported numbers are reproduced from their files once a second artefact is taken into account: for the Richert integral the files minimise $F_1F_2$ over the box $s_1\ge1$, $s_2\ge2$, which is empty for $\alpha>0.029$, and the optimiser then returns the value at the bound point $(1,2)$.
 
 \begin{table}[htbp]
 \centering\small
@@ -267,40 +267,48 @@ so their lower function exceeds their upper function. At their point the constra
 \toprule
 functions & $f(\sigma_1,\sigma_2)$ & main & switched & $\lambda\cdot$Richert & $H$ & $G(0.4230,0.0249)$\\
 \midrule
-as in their files & $1.506$ & $44.17$ & $20.25$ & $5.54$ & $+18.39$ & $+0.112$\\
-correct linear sieve & $0.128$ & $3.77$ & $20.25$ & $8.39$ & $-24.87$ & $-23.32$\\
+as in their files & $1.503$ & $44.09$ & $20.25$ & $22.58$ & $+1.26$ & $-0.001$\\
+correct linear sieve & $0.125$ & $3.68$ & $20.46$ & $17.50$ & $-34.28$ & $-23.73$\\
 \bottomrule
 \end{tabular}
-\caption{The quantities of \cite{NX}, Section~5, at their point $\lambda=0.17$, $\theta=0.25$, $\theta_1=0.449$, $\theta_2=0.011$ (they report $H=1.2690$, a local value of their optimiser) and at their unweighted point, where they report $G\approx0.001378$.}
+\caption{The quantities of \cite{NX}, Section~5, at their point $\lambda=0.17$, $\theta=0.25$, $\theta_1=0.449$, $\theta_2=0.011$ (they report $H=1.2690$) and at their unweighted point, where they report $G\approx0.001378$; values from \cite{ChenNX}.}
 \label{tab:nx}
 \end{table}
 
-\subsection{Corrected values}
-With the correct functions the inequality $H>0$ requires $\theta_1$ close to $\frac12$, where $C(\theta_1)\asymp\delta^{3/2}$ against $f(1/(2\theta_1))\asymp\delta^{1/2}$, $\delta=1-2\theta_1$, and then $\theta_2\le\delta/4$ for the linear sieve to have $s_2\ge2$. A search over $\theta_1\in[0.30,0.4975]$ (step $0.0025$), $\theta_2\in[0.002,0.025]$, $\theta$ and $\lambda$ (\texttt{code/nath\_xie\_app.py}) gives the minimum of $1/\lambda+1/\theta$ with $H\ge0$:
-\begin{itemize}[leftmargin=1.5em]
-\item rectangle bounds (their sieve): $84.85$ at $\theta_1=0.4825$, $\theta_2=0.002$, $\theta=0.036$, $\lambda=0.018$, hence $\omega(p+2)\le84$;
-\item the fixed point on the inert primes, $n=1600$: $56.86$ (trapezoid) and $65.91$ (one-sided), hence $\omega(p+2)\le56$, resp.\ $65$; the switched term is $20.4$ against a main term of $34.6$ at $\theta_2=0.002$.
-\end{itemize}
-The fixed point is valid in their setting by the proof of Lemma~4.3 of Part~XIII: the sub-sequences $\{p-1:\ q\mid p-1\}$ for inert $q$ have the level $x^{1/2}/q$ by the Bombieri--Vinogradov theorem for products of primes (their Lemma~3.2), and the auxiliary sieve on $p+2$ is untouched by the identity. This proves Theorem~\ref{thm:nx}. The limiting factor is their switched term, a product of two linear upper sieves with level split as $D_1D_2\le x^{1/2}$; the vector sieve contributes little once the inert primes are handled by Buchstab's identity.
+\subsection{The switched term}
+Three constants of their Proposition~4.2 need correction \cite[\S5]{ChenNX}. The Wirsing constant $c_3$ lacks the Euler factor $(1-\frac12)^{1/2}$ of the prime $2$ ($c_3=0.7500$, not $1.0607$). The joint singular series of the two linear sieves is $\prod_{p>3}(1-(p-2)^{-2})$, not $c_1=\prod_{p>3}(1+(p-2)^{-2})$. The bound $H_1(m)\le\frac{2m}{\varphi(2m)}c_2$ is reversed, which changes the weights in the sum over $m$. Together the coefficient $2c_1c_2^2c_3=1.111744$ becomes $0.579909$. Moreover the levels of the two upper sieves need only satisfy $D_1D_2\le x^{1/2-\e}$, so that $(\theta_2\min(\theta_1,\frac12-\theta_2))^{-1}$ may be replaced by
+\[
+W(\theta_2)=\min_{1\le s<1/(2\theta_2)}\frac{e^{-\gamma}F_1(s)/2}{\theta_2(\frac12-s\theta_2)}
+\]
+($F_1$ the linear upper function). The corrected switched term is $0.579909\,C(\theta_1)W(\theta_2)$.
 
+\subsection{Corrected values}
+We minimise $1/\lambda+1/\theta$ subject to $H\ge0$ with the correct functions (\texttt{code/nath\_xie\_fixed\_point.py}; $\theta_1$ on the grid, $\theta_2\in[0.0005,0.012]$).
+\begin{itemize}[leftmargin=1.5em]
+\item Switched term as printed in \cite{NX}: rectangle bounds (their sieve) $59.16$ at $\theta_1=0.485$, $\theta_2=0.0006$; fixed point on the inert primes, $n=1600$: $58.68$ (one-sided) and $53.24$ (trapezoid).
+\item Corrected constants, levels as in \cite{NX}: rectangle $40.13$; fixed point $38.06$ (one-sided) and $35.79$ (trapezoid).
+\item Corrected switched term $0.579909\,C(\theta_1)W(\theta_2)$: rectangle $17.43$ at $\theta_1=0.396$, $\theta_2=0.006$, hence $\omega(p+2)\le17$; fixed point, $n=1600$, $\theta_2=0.008$: $15.947$ (one-sided, $\theta_1=0.3991$, $\theta=0.198$, $\lambda=0.0918$) and $15.72$ (trapezoid), hence $\omega(p+2)\le15$.
+\end{itemize}
+The rectangle values agree with the independent pure-Python computation of \cite{ChenNX} ($59.20$, $40.17$, $17.43$). The fixed point is valid in their setting by the proof of Lemma~4.3 of Part~XIII: the sub-sequences $\{p-1:\ q\mid p-1\}$ for inert $q$ have the level $x^{1/2}/q$ by the Bombieri--Vinogradov theorem for products of primes (their Lemma~3.2), and the auxiliary sieve on $p+2$ is untouched by the identity. This proves Theorem~\ref{thm:nx}; the margin of the one-sided value below $16$ is $0.05$.
 \section*{Data and code}
 \begin{itemize}[leftmargin=1.5em]
 \item \texttt{code/hjb\_sieve\_engine.py}: the engine (class \texttt{Engine}), modes \texttt{verify}, \texttt{phase}, \texttt{app2}; outputs \texttt{results/hjb\_sieve\_engine\_*.txt}, \texttt{figures/hjb\_phase.pdf}.
 \item \texttt{code/causal\_fixed\_point.py}: modes \texttt{check}, \texttt{run}, \texttt{boundary}, \texttt{lowmem} (Table~\ref{tab:half}).
 \item \texttt{code/lichtman\_level.py}: the level functions and $G_1$.
-\item \texttt{code/nath\_xie\_check.py}, \texttt{code/nath\_xie\_app.py}: Section~\ref{sec:nx}.
+\item \texttt{code/nath\_xie\_fixed\_point.py}: Section~\ref{sec:nx} (output \texttt{results/nath\_xie\_fixed\_point.txt}); the audit itself is in \cite{ChenNX}.
 \item \texttt{code/semilinear\_sieve.py}, \texttt{code/iterated\_buchstab.py}: from Part~XIII.
 \end{itemize}
 Repository: to be announced.
 
 \begin{thebibliography}{99}
 \bibitem{BFI} E. Bombieri, J. B. Friedlander, H. Iwaniec, Primes in arithmetic progressions to large moduli, Acta Math. 156 (1986), 203--251.
+\bibitem{ChenNX} R. Chen, An audit and restoration of the vector-sieve estimates for primes of the form $m^2+n^2+1$ with $p+2$ almost prime, preprint (2026), \url{https://github.com/Ruqing1963/nath-xie-sieve-audit}.
 \bibitem{ChenXIII} R. Chen, Sums of two squares and Heegner norms with few prime factors, XIII: half-dimensional vector sieves, class-group covering, and explicit small $r$ for arbitrary class pairs $(C',C)$, preprint (2026), doi:10.5281/zenodo.24125302.
 \bibitem{FI} E. Fouvry, H. Iwaniec, Primes in arithmetic progressions, Acta Arith. 42 (1983), 197--218.
 \bibitem{Fouvry} E. Fouvry, Autour du th\'eor\`eme de Bombieri--Vinogradov. II, Ann. Sci. \'Ecole Norm. Sup. (4) 20 (1987), 617--640.
 \bibitem{Li} R. Li, On the representation of even numbers as the sum of a prime and an almost prime, arXiv:2405.05727 (2025).
 \bibitem{Lichtman} J. D. Lichtman, Primes in arithmetic progressions to large moduli, and Goldbach beyond the square-root barrier, arXiv:2309.08522 (2023).
-\bibitem{NX} R. Nath, Y. Xie, Almost primes and primes that are sums of two squares plus 1, arXiv:2501.16723 (2026).
+\bibitem{NX} K. Nath, L. Xie, Almost primes and primes that are sums of two squares plus 1, Acta Arith. 223 (2026), no.~1, 51--82, doi:10.4064/aa250227-19-11; arXiv:2501.16723v3.
 \bibitem{Wu} J. Wu, Chen's double sieve, Goldbach's conjecture and the twin prime problem, Acta Arith. 114 (2004), 215--273.
 \end{thebibliography}
 \end{document}

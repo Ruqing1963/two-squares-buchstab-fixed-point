@@ -2,7 +2,7 @@
 
 **The Buchstab fixed point of a vector sieve as an obstacle problem, causal computation, and variable dispersion levels**
 
-Ruqing Chen (GUT Geoservice Inc., Montreal). Draft; continues Part XIII (doi:10.5281/zenodo.24125302).
+Ruqing Chen (GUT Geoservice Inc., Montreal). doi:[10.5281/zenodo.24231797](https://doi.org/10.5281/zenodo.24231797). Continues Part XIII (doi:10.5281/zenodo.24125302).
 
 - `paper/two_squares_part14.tex`: the paper.
   - Section 2: the fixed point of the recursion of Part XIII (Lemma 4.3 there) in the gauge u = a^{-1/2} Phi, v = a^{-1/2} G is an
